@@ -174,7 +174,7 @@ a {
 }
 
 
-/* .board_view {
+.board_view {
     width: 100%;
     border-top: 2px solid #000;
 }
@@ -304,4 +304,4 @@ a {
     box-sizing: border-box;
     border: 0;
     resize: vertical;
-} */
+}
