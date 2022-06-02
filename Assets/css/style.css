@@ -1,3 +1,4 @@
+/* *은 전체라는 뜻임 */
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +28,7 @@ a {
     margin-bottom: 30px;
 }
 
-/* title 글씨 크기 */
+/* strong 글씨 크기 */
 .board_title strong {
     font-size: 3rem;
 }
