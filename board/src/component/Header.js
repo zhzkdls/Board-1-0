@@ -21,10 +21,7 @@ function Header() {
             <img src="../img/logoSichu.png" style = {imagestyle} alt="시츄" id="logo" className="me-3" />
           </Link>
           <div className="d-flex" style={styles.move}>
-            <Nav.Link href="/do" style={{color:"white"}}>공지사항</Nav.Link>
-            <Nav.Link href="/io" style={{color:"white"}}>공지사항</Nav.Link>
-            <Nav.Link href="/io" style={{color:"white"}}>공지사항</Nav.Link>
-            <Nav.Link href="/io" style={{color:"white"}}>공지사항</Nav.Link>
+            <Nav.Link href="/login" style={{color:"white"}}>로그인</Nav.Link>
           </div>
           <Navbar.Toggle className="border-0" aria-controls="offcanvasNavbar" />
           <Navbar.Offcanvas
@@ -41,9 +38,7 @@ function Header() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link className="border-bottom" href="/post">공지사항</Nav.Link>
-                <Nav.Link className="border-bottom" href="/post">공지사항</Nav.Link>
-                <Nav.Link className="border-bottom" href="/post">공지사항</Nav.Link>
+                <Nav.Link className="border-bottom" href="/write">공지사항</Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>
