@@ -48,8 +48,8 @@ function Board() {
           <p className="bt last"> {'>>'} </p>
         </div>
         <div className="bt_wrap">        
-          <Link to={'/write'} ><button className='on' > 작성 </button></Link>
-          <Link to ={'/'}> <button className='off'>  취소  </button></Link>
+          <Link to={'/write'} ><button className='btn btn-primary' > 작성 </button></Link>
+          <Link to ={'/'}> <button className='btn btn-secondary'>  취소  </button></Link>
         </div>
       </div>
     </div>
