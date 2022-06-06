@@ -15,7 +15,7 @@ function Header() {
 
   return (
     <div id="nav">
-      <Navbar fixed="top" bg="dark" variant="dark" className="container mx-auto my-3 py-3 rounded-4 shadow" expand={false}>
+      <Navbar bg="dark" variant="dark" className="container mx-auto my-3 py-3 rounded-3 shadow" expand={false}>
         <Container fluid>
           <Link to={"/"}>
             <img src="../img/logoSichu.png" style = {imagestyle} alt="시츄" id="logo" className="me-3" />
