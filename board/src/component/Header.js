@@ -38,7 +38,7 @@ function Header() {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link className="border-bottom" href="/write">공지사항</Nav.Link>
+                <Nav.Link className="border-bottom" href="/login">로그인</Nav.Link>
               </Nav>
             </Offcanvas.Body>
           </Navbar.Offcanvas>

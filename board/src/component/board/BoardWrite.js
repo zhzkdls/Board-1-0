@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import '../../css/Board.css';
 import axios from 'axios';
 import {Link, useNavigate} from 'react-router-dom';
+import withReactContent from 'sweetalert2-react-content'
+
+import Swal from 'sweetalert2'
 
 function BoardWrite({handleSubmit}) {
   const navigate = useNavigate();
@@ -10,6 +13,25 @@ function BoardWrite({handleSubmit}) {
   const [password, setPassword] = useState('');
   const [text,setText] = useState('');
 
+  const write = withReactContent(Swal)
+  
+// 언럿=>(구)버젼
+  // const onSubmit = (event) =>{    
+  //   axios.post("/api/post/add",{
+  //     title : title,
+  //     author : author,
+  //     password : password,
+  //     text : text,
+  //     count : 0
+  //   }).then(
+  //     console.log(title),
+  //     write.fire("등록되었습니다"),
+  //     alert("등록되었습니다"),
+  //     navigate("/")
+  //   );
+  // } 
+  
+  // sweetalert2 사용
   const onSubmit = (event) =>{    
     axios.post("/api/post/add",{
       title : title,
@@ -19,10 +41,16 @@ function BoardWrite({handleSubmit}) {
       count : 0
     }).then(
       console.log(title),
-      alert("등록되었습니다"),
+      write.fire({
+        title :"등록되었습니다",
+        text : "공지사항 페이지로 이동합니다.",
+        icon: "success",
+      }),
       navigate("/")
     );
-  }  
+  } 
+
+
   return ( 
     
     <div className="board_wrap container mx-auto">

@@ -5,6 +5,7 @@ import BoardWrite from './component/board/BoardWrite';
 import BoardDetail from './component/board/BoardDetail';
 import BoardEdit from './component/board/BoardEdit';
 import Header from './component/Header';
+import LoginPage from './page/LoginPage';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Header />  
         <Routes>          
           <Route exact path = "/" element = {<Board />} />
+          <Route path= "/login" element={<LoginPage />} />
           <Route path = "/write" element = {<BoardWrite />} />
           <Route path = "/post/:id" element = {<BoardDetail/>} />
           <Route path = "/edit/:id" element = {<BoardEdit />} />

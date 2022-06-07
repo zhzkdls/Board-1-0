@@ -3,6 +3,9 @@ import React, { useEffect, useState } from 'react';
 import Moment from 'react-moment';
 import {useNavigate, useParams } from 'react-router-dom';
 import '../../css/Board.css';
+
+import Swal from 'sweetalert2'
+
 function BoardDetail() {
   const navigate = useNavigate();
   const {id} = useParams();
