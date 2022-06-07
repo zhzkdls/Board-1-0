@@ -5,7 +5,10 @@ import BoardWrite from './component/board/BoardWrite';
 import BoardDetail from './component/board/BoardDetail';
 import BoardEdit from './component/board/BoardEdit';
 import Header from './component/Header';
-import LoginPage from './page/LoginPage';
+import SignIn from './page/SignIn';
+import SignUp from './page/SignUp';
+import ForgotPass from './page/ForgotPass';
+
 
 function App() {
   return (
@@ -14,7 +17,9 @@ function App() {
       <Header />  
         <Routes>          
           <Route exact path = "/" element = {<Board />} />
-          <Route path= "/login" element={<LoginPage />} />
+          <Route path= "/SignIn" element={<SignIn />} />
+          <Route path= "/SignUp" element={<SignUp />} />
+          <Route path= "/ForgotPass" element={<ForgotPass />} />
           <Route path = "/write" element = {<BoardWrite />} />
           <Route path = "/post/:id" element = {<BoardDetail/>} />
           <Route path = "/edit/:id" element = {<BoardEdit />} />
