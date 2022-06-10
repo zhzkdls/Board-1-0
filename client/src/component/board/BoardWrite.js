@@ -33,7 +33,7 @@ function BoardWrite({handleSubmit}) {
   
   // sweetalert2 사용
   const onSubmit = (event) =>{    
-    axios.post("/api/post/add",{
+    axios.post("http://localhost:5000/api/post/add",{
       title : title,
       author : author,
       password : password,

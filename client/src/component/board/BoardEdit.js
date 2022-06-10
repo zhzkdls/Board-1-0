@@ -9,13 +9,13 @@ function BoardEdit() {
   const [post, setPost] = useState({ });
 
   useEffect(() => {
-    axios.get(`/api/post/${id}`)
+    axios.get(`http://localhost:5000/api/post/${id}`)
     .then(Response =>{
       setPost(Response.data)})
   },[id]);
 
   const onSubmit = (event) =>{    
-    axios.put(`/api/edit/${id}`,{
+    axios.put(`http://localhost:5000/api/edit/${id}`,{
       id :id,
       text : newText   
     }).catch((e) => {

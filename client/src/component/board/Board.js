@@ -6,7 +6,7 @@ import Moment from "react-moment";
 
 function Board() {
 
-    const url = "/api/getAll"
+    const url = "http://localhost:5000/api/getAll"
 
     const [post, setPost] = useState([{
         id:""

@@ -12,14 +12,14 @@ function BoardDetail() {
   const [post, setPost] = useState({ });
 
   useEffect(() => {
-    axios.get(`/api/post/${id}`)
+    axios.get(`http://localhost:5000/api/post/${id}`)
     .then(Response =>{
       setPost(Response.data)})
             
   },[id]);
 
   const handleCount = () =>{
-    axios.put(`/api/count/${id}`,{
+    axios.put(`http://localhost:5000/api/count/${id}`,{
     id : id,
     count : Number(post.count) })    
     .then(console.log(post.count),

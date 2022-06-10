@@ -16,13 +16,15 @@ function App() {
       <BrowserRouter>
       <Header />  
         <Routes>          
+          {/* 게시판 */}
           <Route exact path = "/" element = {<Board />} />
-          <Route path= "/SignIn" element={<SignIn />} />
-          <Route path= "/SignUp" element={<SignUp />} />
-          <Route path= "/ForgotPass" element={<ForgotPass />} />
           <Route path = "/write" element = {<BoardWrite />} />
           <Route path = "/post/:id" element = {<BoardDetail/>} />
           <Route path = "/edit/:id" element = {<BoardEdit />} />
+          {/* 로그인 */}
+          <Route path= "/SignIn" element={<SignIn />} />
+          <Route path= "/SignUp" element={<SignUp />} />
+          <Route path= "/ForgotPass" element={<ForgotPass />} />
         </Routes>
       </BrowserRouter>
     </div>
