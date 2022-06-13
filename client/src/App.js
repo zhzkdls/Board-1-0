@@ -8,6 +8,7 @@ import Header from './component/Header';
 import SignIn from './page/SignIn';
 import SignUp from './page/SignUp';
 import ForgotPass from './page/ForgotPass';
+import Home from './page/Home';
 
 
 function App() {
@@ -15,9 +16,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Header />  
-        <Routes>          
+        <Routes>   
+          {/* 메인 페이지 */}
+          <Route exact path = "/" element = {<Home />} />
           {/* 게시판 */}
-          <Route exact path = "/" element = {<Board />} />
+          <Route path = "/post" element = {<Board />} />
           <Route path = "/write" element = {<BoardWrite />} />
           <Route path = "/post/:id" element = {<BoardDetail/>} />
           <Route path = "/edit/:id" element = {<BoardEdit />} />
